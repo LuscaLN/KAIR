@@ -216,6 +216,8 @@ def setup(args):
 
 def get_image_pair(args, path):
     (imgname, imgext) = os.path.splitext(os.path.basename(path))
+    print(imgname)
+    print(imgext)
 
     # 001 classical image sr/ 002 lightweight image sr (load lq-gt image pairs)
     if args.task in ['classical_sr', 'lightweight_sr']:
